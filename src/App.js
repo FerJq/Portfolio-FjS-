@@ -1,13 +1,10 @@
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-
 //Components
 import Navbar from "./components/Navbar.js";
 import Profile from "./components/Profile.js";
 import Skills from "./components/Skills.js";
 import Contact from "./components/Contact.js";
-import Footer from "./components/Footer.js";
-import About from "./components/About.js";
 import Pages from "./components/Pages.js";
 
 //Styles
@@ -20,11 +17,9 @@ function App() {
       <Navbar />
       <Routes location={location}>
         <Route path="/" exact element={<Profile />} />
-        <Route path="/aboutus" exact element={<About />} />
         <Route path="/skills" exact element={<Skills />} />
         <Route path="/pages" exact element={<Pages />} />
         <Route path="/contact" exact element={<Contact />} />
-        <Route path="/footer" exact element={<Footer />} />
       </Routes>
     </div>
   );
