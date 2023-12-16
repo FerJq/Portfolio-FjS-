@@ -40,7 +40,7 @@ const CssNav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 10rem;
-  background: #25161b;
+  background: #352f44;
   position: sticky;
   top: 0;
   z-index: 10;
