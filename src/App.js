@@ -6,6 +6,7 @@ import Profile from "./components/Profile.js";
 import Skills from "./components/Skills.js";
 import Contact from "./components/Contact.js";
 import Pages from "./components/Pages.js";
+import Footer from "./components/Footer.js";
 
 //Styles
 import "./App.css";
@@ -21,6 +22,7 @@ function App() {
         <Route path="/pages" exact element={<Pages />} />
         <Route path="/contact" exact element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
