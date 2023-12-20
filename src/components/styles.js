@@ -4,13 +4,15 @@ export const Image = styled.div`
   flex: 1;
   z-index: 2;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
     rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
     rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 
   img {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     object-fit: cover;
     border-radius: 0.5rem;
     overflow: visible;

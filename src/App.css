@@ -5,9 +5,19 @@
 }
 
 body {
-  background-color: #2a2438;
+  background-color: #222831;
 }
 
 a {
   text-decoration: none;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./assets/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 160px 0;
 }

@@ -8,11 +8,11 @@ import walks from "../assets/walks.jpg";
 
 const About = () => {
   return (
-    <>
+    <Container>
       <CSSMainBox>
         <CSSChildrenBox>
-          <img src={flowers} />
-          <h2>Photography!</h2>
+          <img src={flowers} alt="pictures" />
+          <h6>Photography!</h6>
           <p>
             Since young, my parents and family helped me to understand our lives
             are short and live "Today" as the last day, every time that I go
@@ -23,8 +23,8 @@ const About = () => {
           </p>
         </CSSChildrenBox>
         <CSSChildrenBox>
-          <img src={food} />
-          <h2>Cooking!</h2>
+          <img src={food} alt="cookie" />
+          <h6>Cooking!</h6>
           <p>
             Eat is one of the pleasure of life, Cook is always fun, mix all
             those spices, imagination and love will help you to make amazing
@@ -33,8 +33,8 @@ const About = () => {
           </p>
         </CSSChildrenBox>
         <CSSChildrenBox>
-          <img src={walks} />
-          <h2>Walks!</h2>
+          <img src={walks} alt="walks" />
+          <h6>Walks!</h6>
           <p>
             Gaming, my favorite hobby, since I was a little girl, I always have
             been enjoying the fantastics worlds than games have to offer, all
@@ -45,12 +45,17 @@ const About = () => {
           </p>
         </CSSChildrenBox>
       </CSSMainBox>
-    </>
+    </Container>
   );
 };
 
+const Container = styled.div`
+  margin: 0 2rem 0 2rem;
+`;
+
 const CSSMainBox = styled.div`
-  padding: 2rem 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 1rem;
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -58,8 +63,9 @@ const CSSMainBox = styled.div`
 `;
 
 const CSSChildrenBox = styled.div`
+  background: #393e46;
   min-height: 30vh;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   border-radius: 1rem;
   overflow: hidden;
@@ -67,6 +73,18 @@ const CSSChildrenBox = styled.div`
     width: 100%;
     height: 40vh;
     object-fit: cover;
+  }
+
+  h6 {
+    font-size: 3rem;
+    font-family: "Whisper", cursive;
+    margin-top: 1rem;
+    color: #00bbf0;
+    font-weight: 900;
+  }
+
+  p {
+    padding: 1rem;
   }
 `;
 

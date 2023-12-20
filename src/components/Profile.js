@@ -4,22 +4,32 @@ import styled from "styled-components";
 import { Image } from "./styles.js";
 //assets
 import pic1 from "../assets/pic1.jpg";
+import pic2 from "../assets/pic2.jpg";
+import pic3 from "../assets/pic3.png";
+import pic4 from "../assets/pic4.png";
 
 //components
 import About from "./About.js";
+import Description from "./Description.js";
 
 const Profile = () => {
   return (
     <>
-      <CSSProfile>
-        <CSSInfo>
-          <h2>Fernanda J. Santiago</h2>
-          <p>Front End Developer</p>
-        </CSSInfo>
-        <Image>
-          <img src={pic1} />
-        </Image>
-      </CSSProfile>
+      <header>
+        <CSSProfile>
+          <CSSInfo>
+            <h2>Fernanda J. Santiago</h2>
+            <h3>Front End Developer</h3>
+          </CSSInfo>
+          <Image>
+            <img src={pic1} alt="profile_my_picture1" />
+            <img src={pic2} alt="profile_my_picture2" />
+            <img src={pic3} alt="profile_my_picture3" />
+            <img src={pic4} alt="profile_my_picture4" />
+          </Image>
+        </CSSProfile>
+      </header>
+      <Description />
       <About />
     </>
   );
@@ -40,15 +50,18 @@ const CSSProfile = styled.div`
 
 const CSSInfo = styled.div`
   flex: 1;
-  padding-right: 3rem;
+  padding: 4rem;
   z-index: 2;
   h2 {
-    font-weight: lighter;
-    font-size: 4rem;
+    color: white;
+    font-weight: 600;
+    font-size: 3rem;
   }
 
-  p {
+  h3 {
     font-size: 1.5rem;
+    color: #00bbf0;
+    font-weight: 800;
   }
   @media (max-width: 1300px) {
     padding: 0;

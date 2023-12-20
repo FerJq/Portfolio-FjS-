@@ -40,7 +40,7 @@ const CssNav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 10rem;
-  background: #352f44;
+  background: #393e46;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -65,6 +65,7 @@ const CssNav = styled.nav`
 
   #logo {
     .link {
+      color: #00bbf0;
       font-weight: bolder;
       font-family: "Whisper", cursive;
       font-size: 2rem;
